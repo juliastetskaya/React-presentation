@@ -271,7 +271,7 @@
 			viewDistance: 3,
 
 			// The display mode that will be used to show slides
-			display: 'block',
+      display: 'block',
 
 			// Hide cursor if inactive
 			hideInactiveCursor: true,

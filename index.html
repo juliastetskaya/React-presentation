@@ -7,8 +7,9 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/style.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -25,17 +26,147 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+        <section>
+          <img width="416" height="365" class="react-logo" data-src="./img/react-icon.png" alt="React icon">
+          <h1>React</h1>
+          <h3>A JavaScript Library</h3>
+          <p class="name">by Julia Stetskaya</p>
+        </section>
+
+        <section>
+          <section>
+            <p>
+              A JavaScript library for building user interfaces
+            </p>
+          </section>
+          <section class="facebook" data-background-image="./img/facebook.jpg">
+          </section>
+          <section class="statistics" data-background-image="./img/statistics.png">
+          </section>
+          <section class="hired" data-background-image="./img/hired.jpg">
+          </section>
+        </section>
+        <section>
+          <section><p class="title">Components</p>
+            <pre class="block-1 fragment" data-fragment-index="1"><code class="code-block-1" data-trim>
+                <component>
+                  ...
+                </component>
+            </code></pre>
+            <p class="block-2 fragment" data-fragment-index="2">A piece of the UI</p>
+          </section>
+          <section>
+            <div class="block block-3 fragment" data-fragment-index="4"></div>
+            <div class="block block-4"></div>
+            <div class="block block-5 fragment" data-fragment-index="2"></div>
+            <div class="block block-6 fragment" data-fragment-index="3"></div>
+          </section>
+          <section>
+              <div class="block block-7">App</div>
+              <div class="block block-8 fragment" data-fragment-index="1"></div>
+              <div class="block block-9 fragment" data-fragment-index="1"></div>
+              <div class="block block-10 fragment" data-fragment-index="2"></div>
+              <div class="block block-11 fragment" data-fragment-index="2"></div>
+          </section>
+        </section>
+        <section>
+          <section class="think-react">Thinking in <span>React</span></section>
+          <section data-background-image="./img/twitter_1.jpg"></section>
+          <section data-background-image="./img/twitter_2.jpg"></section>
+          <section data-background-image="./img/twitter_3.jpg"></section>
+          <section data-background-image="./img/twitter_4.jpg"></section>
+          <section>
+              <div class="block block-20">App</div>
+              <div class="block block-12 fragment" data-fragment-index="1">NavBar</div>
+              <div class="block block-13 fragment" data-fragment-index="2">Profile</div>
+              <div class="block block-14 fragment" data-fragment-index="3">Wall</div>
+              <div class="block block-15 fragment" data-fragment-index="4">SideBar</div>
+              <div class="block block-16 fragment" data-fragment-index="5">Tweet</div>
+              <div class="block block-17 fragment" data-fragment-index="6">Like</div>
+              <div class="block block-18 fragment" data-fragment-index="7">Followers</div>
+              <div class="block block-19 fragment" data-fragment-index="8">Trends</div>
+          </section>
+          <section>
+            <pre><code data-trim>
+              import React from "react";
+
+              class Tweet extends React.Component {
+                this.state = { };
+                render() {
+
+                };
+              }
+            </code></pre>
+            <div class="dash-1 fragment" data-fragment-index="1">&ndash;</div>
+            <div class="dash-2 fragment" data-fragment-index="1">&ndash;</div>
+            <div class="arrow fragment" data-fragment-index="1">&rarr;</div>
+            <div class="block block-21 fragment" data-fragment-index="2">ReactElement</div>
+          </section>
+          <section>
+            <div class="block block-22">React Element</div>
+            <div class="block block-24 fragment" data-fragment-index="2"></div>
+            <div class="block block-25 fragment" data-fragment-index="2"></div>
+            <div class="block block-26 fragment" data-fragment-index="2"></div>
+            <div class="block block-27 fragment" data-fragment-index="2"></div>
+            <div class="block block-28 fragment" data-fragment-index="2"></div>
+            <div class="block block-34 fragment" data-fragment-index="3">Virtual DOM</div>
+            <div class="block block-23">DOM Element</div>
+            <div class="block block-29 fragment" data-fragment-index="1"></div>
+            <div class="block block-30 fragment" data-fragment-index="1"></div>
+            <div class="block block-31 fragment" data-fragment-index="1"></div>
+            <div class="block block-32 fragment" data-fragment-index="1"></div>
+            <div class="block block-33 fragment" data-fragment-index="1"></div>
+            <div class="block block-35 fragment" data-fragment-index="4">Real DOM</div>
+          </section>
+        </section>
+        <section>
+          <section>
+            <pre><code data-trim>
+              const element = document.querySelector('.class');
+
+              element.classList.add();
+
+              element.addEventListener();
+            </code></pre>
+          </section>
+          <section>
+            <p class="react">React</p>
+            <p>reacts to state changes</p>
+          </section>
+          <section>
+            <p>React Only Updates What’s Necessary</p>
+            <img src="https://reactjs.org/granular-dom-updates-c158617ed7cc0eac8f58330e49e48224.gif" alt="React Only Updates What’s Necessary">
+          </section>
+          <section>
+            <p class="advantages">The main advantages of React</p>
+            <ol class="advantages__list">
+              <li>Builds upon JavaScript fundamentals</li>
+              <li>One direction data flow</li>
+              <li>Most components consist of nothing more complicated than render, props and state</li>
+              <li>Simple integration with large apps or other libraries</li>
+            </ol>
+          </section>
+          <section>
+            <p class="company__title">React today</p>
+            <ul class="company__list">
+              <li class="fragment" data-fragment-index="1"><img src="./img/facebook_icon.jpg" alt="facebook"></li>
+              <li class="fragment" data-fragment-index="2"><img src="./img/instagram.jpeg" alt="instagram"></li>
+              <li class="fragment" data-fragment-index="3"><img src="./img/netflix.png" alt="netflix"></li>
+              <li class="fragment" data-fragment-index="4"><img src="./img/nyt.png" alt="New York Times"></li>
+              <li class="fragment" data-fragment-index="5"><img src="./img/yahoo.jpeg" alt="Yahoo! Mail"></li>
+              <li class="fragment" data-fragment-index="6"><img src="./img/whatsapp.png" alt="WhatsApp"></li>
+              <li class="fragment" data-fragment-index="7"><img src="./img/dropbox.png" alt="Dropbox"></li>
+            </ul>
+            <p class="fragment" data-fragment-index="8">and many others...</p>
+          </section>
+        </section>
+        <section class="thanks">Thank you for your attention!</section>
 			</div>
 		</div>
 
 		<script src="js/reveal.js"></script>
 
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
